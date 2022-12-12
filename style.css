@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,500;1,400;1,500&family=Lato:wght@300&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#2eca6a;
+    --secondary-color:#f99500;
+    --tertiary-color:#2a3855;
+    --dark-color:#333;
+    --light-color:#f3f3f3;
+    --max-width:1100px;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    background-color: var(--light-color);
+}
+.py-1{ padding: 1.5rem 0;}
+.py-2{ padding: 2rem 0; }
+.py-3{ padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem 0; }
+.p-2 { padding: 2rem 0; }
+.p-3 { padding: 3rem 0; }
+
+
+.text-primary{
+    color:#2eca6a;
+}
+
+a{
+    color:#333;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    width:100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:'Staatliches', cursive;
+    margin-bottom:.55rem;
+    line-height:1.4;
+}
+
+p{
+    margin:.5rem 0;
+}
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-dark{
+    background: #333;
+    color:#fff;
+}
+
+.m-heading{
+    font-size:2rem;
+    margin-bottom: 0.65rem;
+    line-height: 1.1;
+    padding: 1.3rem;
+}
+
+/*main-nav*/
+
+#main-nav{
+    background-color:#fff;
+    position:sticky;
+    top:0;
+    z-index: 2;
+}
+
+#main-nav .container{
+    display:flex;
+    justify-content: space-between;
+    color:#333;
+    padding:2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#main-nav .logo{
+    width:180px;
+
+}
+
+#main-nav ul{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#main-nav ul li a{
+    padding: 0.75rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#main-nav ul li a:hover{
+    background: var(--light-color);
+    color:var(--dark-color);
+    border-bottom: #2eca6a 2px solid;
+}
+
+#main-nav button{
+    background-color: #2eca6a;
+    border: none;
+    outline: #2eca6a;
+    padding:10px;
+    color:#fff;
+    font-size: 14px;
+}
+
+#main-nav button :hover{
+    background: #2eca6a;
+    cursor: pointer;
+}  
+.btn{
+    display: inline-block;
+    color: #fff;
+    background: #93cb52;
+    padding:0.5rem 2rem;
+    text-decoration: none;
+    border:none;
+    border-radius:4px;
+}
+.btn:hover{
+    background: #7ab436;
+    cursor: pointer;
+}
+.btn-dark{
+    background: #333;
+    color: #fff;
+    
+}
+.btn-secondary { background: var(--secondary-color)}
+
+.container{
+    max-width:var(--max-width);
+    margin: auto;
+    padding:0 2rem;
+    overflow:hidden;
+}
+
+#showcase{
+    color:#fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+#showcase:before{
+    content: '';
+    background: url('./image/slide-3.jpg') no-repeat center center/cover;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0.4;
+}
+.text-center{
+    text-align: center;
+}
+
+#showcase .showcase-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-left:50px;
+    height: 60vh;
+}
+#showcase .showcase-content{
+    z-index: 1;
+}
+
+#showcase .showcase-container p{
+    margin-bottom: 1.8rem;
+}
+#showcase .showcase-container .btn-secondary{
+    margin-left:5px;
+    display: inline-block;
+}
+
+.boxes{
+    display: flex;
+    padding:1.3rem 0;
+    gap: 1rem;
+}
+
+.box{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what  .box {
+    background:var(--light-color);
+    border-radius:2rem;
+    box-shadow: 2px 2px 18px rgb(14 52 54  /  15%);
+    padding:20px;
+}
+
+#what .boxes .box i{
+    background: var(--primary-color);
+    border-radius:50%;
+    color:#333;
+    padding:1rem;
+    margin-bottom: 1rem;
+}
+
+#what .boxes .box h2{
+    font-size: 1.1rem;
+    margin:1rem 0 0.4rem;
+}
+#what .boxes .box p{
+    font-size: 00.938rem;
+}
+#what .box:hover{
+    background:var(--primary-color);
+    color:#fff;
+    transition: 0.4s all linear;
+}
+
+section{
+    padding: 4.5rem 0 3rem;
+}
+
+
+.constant{
+    display: flex;
+    background: var(--light-color);
+    width:fit-content;
+    height: fit-content;
+    padding: 0 0;
+    flex-wrap: nowrap;
+}
+.about-img img{
+    width:500px;
+    height: 400px;
+    background: black;
+
+}
+.constant .about-text{
+    padding: 1.7rem;
+    width: 500px;
+    height: 400px;
+    background-color:#fff;
+
+    
+    
+}
+
+.about-text .lol {
+    font-size: 1.9rem;
+    margin-top: 60px;
+    
+    
+}
+
+.about-text p{
+    margin-bottom: 14px;
+    font-weight: 700;
+}
